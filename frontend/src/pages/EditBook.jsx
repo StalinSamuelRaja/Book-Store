@@ -16,7 +16,7 @@ import axios from "axios";
     useEffect(()=>{
       setLoading(true);
       axios
-        .get(`http://localhost:9000/books/${id}`)
+        .get(`${base_url}books/${id}`)
         .then((res) => {
           setTitle(res.data.title);
           setAuthor(res.data.author);

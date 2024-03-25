@@ -16,7 +16,7 @@ const Home = () => {
     setLoading(true);
     axios
       .get(
-        `http://localhost:9000/books/all?page=${currentPage}&limit=${booksPerPage}`
+        `${base_url}/all?page=${currentPage}&limit=${booksPerPage}`
       )
       .then((res) => {
         setBooks(res.data.data);
