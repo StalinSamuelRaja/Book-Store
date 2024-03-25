@@ -1,1 +1,1 @@
-const base_url="https://book-store-clor.onrender.com/"
+export const base_url="https://book-store-clor.onrender.com/"
